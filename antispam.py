@@ -29,8 +29,8 @@ from telethon import events
 from html_telegraph_poster import TelegraphPoster
 from html_telegraph_poster.upload_images import upload_image
 
-Shoko_gban = TelegraphPoster(use_api=True)
-Shoko_gban.create_api_token('Shoko gban', 'Shoko', 'https://www.meanii.me/') 
+Ram_gban = TelegraphPoster(use_api=True)
+Ram_gban.create_api_token('Shoko gban', 'Ram', 'https://www.Noor.comi/') 
 
 
 GBAN_ENFORCE_GROUP = 6
@@ -75,7 +75,7 @@ UNGBAN_ERRORS = {
     "User not found",
 }
 
-# Reworked @meanii <https://github.com/meanii>  
+# Reworked @meanii <https://github.com/kirjga-74>  
 
 @run_async
 @typing_action
@@ -212,7 +212,7 @@ def gban(update, context):
                         \n<strong>Reason:</strong> {reason} \
                         \n\n<strong>Evidence:</strong> <br>\n{evidence}"
     
-    page = Shoko_gban.post(title=f"Ram-gban-{user_chat.id}", author=f"{banner.first_name} ({banner.id})", text=EVIDENSE_NEW_GBAN)
+    page = Ram_gban.post(title=f"Ram-gban-{user_chat.id}", author=f"{banner.first_name} ({banner.id})", text=EVIDENSE_NEW_GBAN)
     evidence_link = page.get('url')
     evidence_link = "<a href='{}'>{}</a>".format(evidence_link, f"Ram GBanned // user_id: {user_chat.id}")
     
@@ -479,7 +479,7 @@ def gbanstat(update, context):
 
 
 def __stats__():
-    return "• {} gbanned users We regularly clean off deleted account from the database.".format(sql.num_gbanned_users())
+    return "• {} gbanned users.)
 
 
 def __user_info__(user_id):
