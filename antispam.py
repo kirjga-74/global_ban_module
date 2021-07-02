@@ -30,7 +30,7 @@ from html_telegraph_poster import TelegraphPoster
 from html_telegraph_poster.upload_images import upload_image
 
 Ram_gban = TelegraphPoster(use_api=True)
-Ram_gban.create_api_token('Shoko gban', 'Ram', 'https://www.Noor.comi/') 
+Ram_gban.create_api_token('Ram gban', 'Ram', 'https://www.Noor.comi/') 
 
 
 GBAN_ENFORCE_GROUP = 6
@@ -224,7 +224,7 @@ def gban(update, context):
         parse_mode=ParseMode.HTML,
         disable_web_page_preview=True,
     )
-    starting_usermsg = f"""<b>You've been globally banned</b>\n<b>Reason:</b> {reason}\n<b>Global Ban log:</b> <a href="https://t.me/stellagban">here</a>\n<b>Appeal:</b> <a href="https://t.me/zerotwopmbot">here</a>"""
+    starting_usermsg = f"""<b>You've been globally banned</b>\n<b>Reason:</b> {reason}\n<b>Global Ban log:</b> <a href="https://t.me/stellagban">here</a>\n<b>Appeal:</b> <a href="https://t.me/eagleunionGbanlogs">here</a>"""
     
    
     try:
